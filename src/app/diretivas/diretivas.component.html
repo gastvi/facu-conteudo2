@@ -1,0 +1,35 @@
+<h1>Diretivas</h1>
+<!-- <h2>*ngIf</h2>
+Nome<input type="text" [(ngModel)]="nome"  placeholder="coloque seu Nome"><br>
+Email<input type="email" [(ngModel)]="email" placeholder="coloque seu email"><br><br>
+<p *ngIf="mostrar"> Nome:{{nome}}</p>
+<p *ngIf="!mostrar"> Email:{{email}}</p><br>
+<input type="button" value="alternar"(click)="alternar()"> -->
+
+<!-- <h2>*ngSwitch/ *ngSwitch/ *ngSwitchCaseDefault</h2><br>
+<br>
+<select [(ngModel)]="selecao">
+<option *ngFor="let f of opcao"> {{f}} </option>
+</select>
+<div [ngSwitch]="selecao">
+<div class="block1" *ngSwitchCase="opcao[0]">{{opcao[0]}}</div>
+<div class="block2" *ngSwitchCase="opcao[1]">{{opcao[1]}}</div>
+<div class="block3" *ngSwitchCase="opcao[2]">{{opcao[2]}}</div>
+<div class="block4" *ngSwitchDefault>outros</div>
+</div> -->
+
+<h2>ngClass</h2><br>
+<h1>
+    <i class="glyphicon" 
+       [ngClass]="{
+        'glyphicon-star-empty': !meuFavorito,
+        'glyphicon-star': meuFavorito
+        }"
+     (click)="onClick()"
+     ></i>
+    
+
+</h1>
+
+
+
